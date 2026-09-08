@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eren Menges — NYU CS Sophomore, AI4Science</title>
-<meta name="description" content="Eren Menges is a sophomore at NYU studying CS, Math, and Quantum Technology. Currently building STGCNNs to forecast flash floods in NYC.">
+<title>Eren Menges — NYU CS Junior, LLMs on Consumer Hardware</title>
+<meta name="description" content="Eren Menges is a junior at NYU studying CS and Math. He trains ternary LLMs from scratch on a MacBook Pro, wrote a paper on ternary draft models for speculative decoding, and built a concurrent C++ inference server.">
 <meta name="author" content="Eren Menges">
-<meta property="og:title" content="Eren Menges — NYU CS Sophomore, AI4Science">
-<meta property="og:description" content="Eren Menges is a sophomore at NYU studying CS, Math, and Quantum Technology. Currently building STGCNNs to forecast flash floods in NYC.">
+<meta property="og:title" content="Eren Menges — NYU CS Junior, LLMs on Consumer Hardware">
+<meta property="og:description" content="Eren Menges is a junior at NYU studying CS and Math. He trains ternary LLMs from scratch on a MacBook Pro, wrote a paper on ternary draft models for speculative decoding, and built a concurrent C++ inference server.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://erenmenges.com/images/main.webp">
 <meta property="og:url" content="https://erenmenges.com">
@@ -19,114 +19,238 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-225F8ZPHGB');
 </script>
 <style>
-
-img { max-width: 100%; }
-body { font-size: 20px; max-width: 800px; }
-.main-photo { float: right; margin-left: 16px; }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+.main-photo { float: right; margin-left: 32px; }
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
+  margin-top: 1em;
+}
+.hero h1 { margin: 0; }
+.hero p:last-child { margin-bottom: 0; }
 @media (max-width: 600px) {
   .main-photo { float: none; margin-left: 0; display: block; width: 100% !important; }
+  .hero { display: block; min-height: 0; }
   body { padding: 0 12px; }
 }
 p {
-  line-height: 1.1;
   margin-bottom: 1.1rem;
+}
+h1, h2, h3 {
+  line-height: 1.15;
+}
+figure {
+  margin: 1.1rem 0;
+}
+figcaption {
+  font-size: 17px;
+  color: #555;
+  text-align: center;
+  margin-top: 0.4em;
+}
+pre {
+  font-size: 13px;
+  overflow-x: auto;
+}
+ul {
+  padding-left: 1em;
+  clear: both;
+}
+li {
+  margin-bottom: 0.7em;
+}
+ul ul {
+  padding-left: 40px;
 }
 </style>
 </head>
 <body>
-
+<img src="images/main.webp" alt="Photo of me" width="320" height="320" class="main-photo">
+<div class="hero">
 <h1>Eren's Corner of the Internet</h1>
-
-<img src="images/main.webp" alt="Photo of me" width="400" class="main-photo">
-
+<div>
 <p>
-<b>Hi! I'm Eren.</b> I'm a 20 year old sophomore at NYU majoring in CS. I like singing, hiking, humbling business majors, and being mom's most handsome son.
+<b>Hi! I'm Eren.</b> I'm a 20 year old junior at NYU majoring in CS. I like singing, hiking, humbling business majors, and being mom's most handsome&nbsp;son.
 </p>
-
 <p>
-    
-<b>Right now, I'm developing STGCNNs to forecast flash floods across New York City.</b> Long-term, I want to get into AI4Science to solve physics problems.
+<b>I also like being able to train and run LLMs on devices I own.</b> This summer I might have overdone&nbsp;that:
 </p>
-
+</div>
+</div>
+<ul>
+<li>
+<b>Avenue</b> &mdash; I trained six language models from scratch on a MacBook Pro, three ternary and three BF16. The training took 43 hours and I could have fried an egg on the lid.<br>
+<a href="https://github.com/erenmenges/Avenue">code</a> &middot; <a href="https://huggingface.co/erenmenges/Avenue/tree/main">models</a> &middot; <a href="https://erenmenges.com/writings/how-ternary-works">how ternary works</a>
+</li>
+<li>
+<b>Should your draft model be ternary?</b> &mdash; turns out yes. A paper I wrote alone, under review at a NeurIPS 2026 workshop.<br>
+<a href="https://erenmenges.com/writings/papers/preprint_should_draft_be_ternary.pdf">paper</a> &middot; <a href="https://github.com/erenmenges/speculative-decoding-ternary">code</a>
+</li>
+<li>
+<b>A C++ inference server</b> &mdash; 4,096 concurrent clients on 4 cores, zero failed requests.<br>
+<a href="https://github.com/erenmenges/concurrent-llm-inference-server">code</a>
+</li>
+<li>
+<b>MLX</b> &mdash; Found a bug in Apple's ML framework, submitted an upstream fix. Merged in 24 hours.<br>
+<a href="https://github.com/ml-explore/mlx/pull/4215">PR #4215</a>
+</li>
+</ul>
 <p>
-
-I'm also minoring in Math and Quantum Technology because I love suffering. My grandma always says I'm good at <b>Python/PyTorch</b> too.
+Looking for a Summer 2027 research/ML engineering internship. My grandma says I'd be good at it. She also says I'm handsome. Two for two.
 </p>
-
 <p>
-    <br>
+Contact me at <a href="mailto:eren.menges@nyu.edu">eren.menges@nyu.edu</a>. Here's my <a href="images/resume.pdf">resume</a> and <a href="https://github.com/erenmenges">GitHub</a>.
+</p>
+<p>
 Take a look around. No flashy animations. Loads under 0.2s.
 </p>
-
+<h2>Latest Work</h2>
+<h3>Avenue &mdash; <a href="https://github.com/erenmenges/Avenue">code</a> &middot; <a href="https://huggingface.co/erenmenges/Avenue/tree/main">models</a> &middot; <a href="https://erenmenges.com/writings/how-ternary-works">explainer</a></h3>
 <p>
-Contact me at <a href="mailto:em5227@nyu.edu">em5227@nyu.edu</a>. Here's my <a href="images/resume.pdf">resume</a> and <a href="https://github.com/erenmenges">GitHub</a>. <br> Check out my <a href="https://spectral-clustering-erenmenges.streamlit.app">Interactive Spectral Clustering Demo</a>. It's beautiful.
+I trained six language models (20M/40M/60M, each in BF16 and ternary), from scratch on a MacBook Pro in 43 hours. I wrote a custom Transformer with RoPE and RMSNorm, a Muon+AdamW training pipeline, and a custom inference stack with sampling. I also used my own BPE tokenizer, trained on the corpus. The models are called Avenue A, B, and C, named after the avenues of East Village (the neighborhood I live in).
 </p>
-
-<br style="clear:both;">
-
-<h2>Current Work</h2>
-
-<ul>
-<li>
-<b>Flood Denoising and Forecasting with STGCNNs</b>
-<ul>
-<li>I'm developing a Spatio-Temporal Graph Convolutional Network (STGCNN) to forecast flash floods across 229 physical sensor nodes in NYC. Flash floods still take lives in 2026 and I can't stand it.</li>
-</ul>
-</li>
-<li>
-<b>Spectral Clustering with Linear Algebra <a href="https://spectral-clustering-erenmenges.streamlit.app">[Launch Interactive Demo]</a></b>
-<ul>
-<li>I implemented a Spectral Clustering algorithm from scratch using numpy to identify non-convex structures often misclassified by classical K-Means. Just a fun little project to practice LA.</li>
-<li>I've also deployed a demo on Streamlit. The math looks beautiful with all the graphs and charts. I'm proud of it.</li>
-</ul>
-</li>
-</ul>
-
-<img src="images/clustering.webp" alt="Data suited for spectral clustering, two donuts." width="850">
-<p>Traditional clustering algorithms fail spectacularly with these shapes.</p>
-
-<img src="images/singing.webp" alt="Photo of me singing" width="600">
-<p>Me singing at a comedy club.</p>
-
+<p>
+Every line written by me, a human. I can tell you what each function does by heart.
+</p>
+<figure>
+<img src="images/avenue_sample.webp" alt="3 different generation samples" width="600">
+<figcaption>The difference between BF16 (top, regular BF16 mixed-precision training), ternary (middle, quantization-aware training), and PTQ (bottom, the model quantized after training).</figcaption>
+</figure>
+<p>
+The result: at equal memory, ternary wins. A 33 MB ternary model beats a 41 MB BF16 model on validation bits per byte (BPB). Also, a ternary model needs ~1.9&times; the parameters to match BF16, but at 2 bits a weight the memory footprint still comes out smaller. Quantizing to ternary after training is absolutely horrible. Don't do it.
+</p>
+<figure>
+<img src="images/avenue_size_vs_bpb.webp" alt="figure: size vs BPB" width="800" height="564" loading="lazy">
+<figcaption>Model size in MB against validation BPB.</figcaption>
+</figure>
+<p>
+It's interesting to see a 60M ternary model be smaller and perform better than a 20M BF16 model. Model sizes were computed at 2 bits per ternary weight; HuggingFace checkpoints are full training checkpoints, saved at the end of training. They include the FP32 weights and optimizer state.
+</p>
+<p>
+I also couldn't find an explanation of how ternary training works that didn't fry my brain, so I <a href="https://erenmenges.com/writings/how-ternary-works">wrote one</a>.
+</p>
+<h3>Should your draft model be ternary? &mdash; <a href="https://erenmenges.com/writings/papers/preprint_should_draft_be_ternary.pdf">paper</a> &middot; <a href="https://github.com/erenmenges/speculative-decoding-ternary">code</a></h3>
+<p>
+Speculative decoding: a small draft model guesses tokens in a few cheap consecutive forward passes, a big target model checks them all in one forward pass. If the guessed tokens are accurate, the big model gets those extra tokens for the cost of these cheap extra forward passes, instead of the cost of its own expensive extra forward passes. This speeds up inference.
+</p>
+<p>
+Consumer hardware is bandwidth-bound, so the draft's cost is its memory footprint. I remembered that ternary weights occupy 2 bits of space instead of 16. So I asked the obvious question.
+</p>
+<p>
+I built the analytical harness (21 drafts from 99M to 1.5B, 2 targets, 3 domains, 1,024 prompts) and validated its analysis with real speculative decoding runs.
+</p>
+<p>
+Ternary drafts hold a 2.05&ndash;2.28&times; predicted speedup at every size. FP16 drafts fall to 1.18&times; at 1.5B. At equal memory, FP16 needs up to 1.74&times; the bytes to match a ternary draft.
+</p>
+<p>
+Sole author. Under review at a NeurIPS 2026 workshop. Wish me luck!
+</p>
+<figure>
+<img src="images/speedup_FloatLM_3.9B_web.webp" alt="figure: speedup vs draft size" width="800" height="560" loading="lazy">
+<figcaption>Model memory footprint in MB against predicted speedup (1.0&times; is standard autoregressive decoding).</figcaption>
+</figure>
+<p>
+We see that ternary drafts result in higher speedups in most of the measured range.
+</p>
+<h3>Concurrent LLM inference server in C++ &mdash; <a href="https://github.com/erenmenges/concurrent-llm-inference-server">code</a></h3>
+<p>
+The problem: a lot of people want to talk to one model at once. But a thread that runs the model, "the engine," can only do one of these things at a time: generate answers for clients, or send those answers to clients. Someone else has to handle the talking to clients part.
+</p>
+<p>
+What I built: an HTTP server in C++20 where many threads take requests, and one thread (the engine) runs inference. A request comes in from a client, gets tokenized, and goes into a queue. The engine thread pulls from that queue, packs every running request into one batch, and generates one token for all requests. When a request finishes, the engine hands the answer back to the HTTP thread that was waiting on it, which in turn sends the response to the client. The moment a slot frees up, the next request in line takes it instead of waiting for the whole batch to finish. That's called continuous batching, and it cut mean latency by ~20% against static batching.
+</p>
+<p>
+I used a mutex + condition_variable queue and a std::promise/std::future per request to achieve this. The server runs Qwen3-0.6B through llama.cpp.
+</p>
+<p>
+Load-tested to 4,096 concurrent clients with zero failed requests. ~120 tok/s steady from 8 to 2,048 clients on a 4-core Linux VM.
+</p>
+<pre>
+  client: ─POST /generate──▶ HTTP thread pool (cpp-httplib)
+                                │  parse JSON, turn the prompt into a chat prompt
+                                │  tokenize on this thread, lock, submit, notify
+                                ▼
+                        ┌──────────────────┐
+                        │double ended queue│  mutex + condition_variable
+                        └────────┬─────────┘
+                                 ▼
+                        engine thread (the thread that runs inference)
+                          ├─ admit if we have a free slot and prompt+max_tokens fits the KV budget
+                          ├─ prefill admitted sequences
+                          ├─ one llama_decode for a batch consisting of every running sequence (one token each)
+                          ├─ sample
+                          └─ retire by detokenizing, releasing KV, and fulfilling promise (using C++'s future/promise feature)
+                                 │
+                                 ▼
+                        HTTP thread wakes from future.get(), sends the clients the response as JSON. everyone is happy!
+</pre>
+<h3>MLX &mdash; <a href="https://github.com/ml-explore/mlx/pull/4215">PR #4215</a></h3>
+<p>
+I was porting my ternary transformer to MLX because I wanted to squeeze every last bit of performance from my Mac. A module called MultiOptimizer crashed on my model, and I realized that it didn't work on any model with a ReLU or GELU in it. I traced it to tree_merge() throwing when both trees at a position are empty. I wrote regression tests and then fixed it. Merged in 24 hours.
+</p>
+<h3>Writing</h3>
+<p>
+<a href="https://erenmenges.com/writings/how-ternary-works">2-bit transformers, simply explained</a>. Human-written, so if there's a mistake it's all mine.
+</p>
+<figure>
+<img src="images/singing.webp" alt="Photo of me singing" width="600" height="450" loading="lazy">
+<figcaption>Me singing at a comedy club.</figcaption>
+</figure>
 <h2>Experience</h2>
-
 <ul>
 <li>
 <b>Machine Learning Research Intern, C2SMART Center for Urban Mobility, NYU</b> &mdash; Jun 2025 - Aug 2025
 <ul>
-<li>I trained and benchmarked 7 trajectory prediction models for autonomous vehicles on Argoverse2. Found that the EMP architecture keeps up with MTR accuracy at ~50% the compute and 6&times; faster training. Details in my <a href="images/resume.pdf">resume</a>.</li>
+<li>I trained and benchmarked 7 trajectory prediction models for autonomous vehicles on Argoverse2. Found that the EMP architecture keeps up with MTR accuracy at ~50% the compute and 6&times; faster training.</li>
 </ul>
 </li>
 </ul>
-
-<img src="images/trajectory.webp" alt="Screenshot of a typical Argoverse2 trajectory prediction scenario" width="400">
-<p>A typical Argoverse2 trajectory prediction scenario.</p>
-
+<figure>
+<img src="images/trajectory.webp" alt="Screenshot of a typical Argoverse2 trajectory prediction scenario" width="400" height="262" loading="lazy">
+<figcaption>A typical Argoverse2 trajectory prediction scenario.</figcaption>
+</figure>
 <h2>Stuff I Like</h2>
-
 <p>
 Home-cooked dinners. Flight simulators. Video games. Legally drinking with friends. I know this is corny, but I love America. It's the best place I've ever been to outside my own. I also wanna be an EMT if I get the time.
 </p>
-
-<img src="images/halloween.webp" alt="Photo of me with my best friends during Halloween" width="500">
-<p>Me and the boys during Halloween. I was Barney from HIMYM.</p>
-
-<img src="images/flushing.webp" alt="Photo of me with my friend in Flushing" width="500">
-<p>She showed me around Flushing. I loved the food.</p>
-
-<img src="images/hiking.webp" alt="Photo of me hiking" width="300">
-<p>Hiking back to town from Harriman State Park.</p>
-
-
-<hr>
-
+<figure>
+<img src="images/halloween.webp" alt="Photo of me with my best friends during Halloween" width="660" height="488" loading="lazy">
+<figcaption>Me and the boys during Halloween. I was Barney from HIMYM.</figcaption>
+</figure>
+<figure>
+<img src="images/flushing.webp" alt="Photo of me with my friend in Flushing" width="500" height="375" loading="lazy">
+<figcaption>She showed me around Flushing. I loved the food.</figcaption>
+</figure>
+<figure>
+<img src="images/hiking.webp" alt="Photo of me hiking" width="300" height="533" loading="lazy">
+<figcaption>Hiking back to town from Harriman State Park.</figcaption>
+</figure>
 <p>
-Last updated Feb 2026. You are visitor number 0031.
+Also lately I've been into those apps that make you have dinner with five strangers. If you live in a big city, I recommend you give it a try. I had a lot of fun.
 </p>
-
+<hr>
+<p>
+<a href="mailto:eren.menges@nyu.edu">eren.menges@nyu.edu</a> &middot; <a href="https://github.com/erenmenges">GitHub</a> &middot; <a href="images/resume.pdf">resume</a>
+</p>
+<p>
+Last updated September 2026. You are visitor number 0031.
+</p>
 </body>
 </html>
