@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How Ternary Transformers Work, Simply Explained — Eren Menges</title>
+<title>How ternary (1.58-bit) transformers work - Eren Menges</title>
 <meta name="description" content="A plain-language explainer of 2-bit (ternary) transformers: why weights become {-1, 0, 1}, how the absmean quantizer and the straight-through estimator make training possible, and why inference gets faster. Written by Eren Menges.">
 <meta name="author" content="Eren Menges">
-<meta property="og:title" content="How Ternary Transformers Work, Simply Explained — Eren Menges">
+<meta property="og:title" content="How ternary (1.58-bit) transformers work, simply explained">
 <meta property="og:description" content="A plain-language explainer of 2-bit (ternary) transformers: why weights become {-1, 0, 1}, how the absmean quantizer and the straight-through estimator make training possible, and why inference gets faster. Written by Eren Menges.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://erenmenges.com/writings/how-ternary-works/images/ternary_collapse_main.png">
@@ -53,7 +53,7 @@ th { background: #eee; }
 
 <a href="/" class="back-link">&larr; Back to main page</a>
 
-<h1>2-bit Transformers, simply explained</h1>
+<h1>How ternary (1.58-bit) transformers work, simply explained</h1>
 
 <p>I wrote this because all the explanations on the internet fried my mind when I was working on <a href="https://github.com/erenmenges/Avenue">Avenue</a>. This post is <strong>human-written</strong>, with AI only used to generate visuals/LaTeX equations from my handwriting, generate a single metaphor, and provide general mathematical and literary guidance.</p>
 <h2 id="prerequisites">Prerequisites</h2>
@@ -397,7 +397,7 @@ w &amp;= [0.2,\; -0.6,\; 1.2,\; -0.1,\; 0.4] \\[6pt]
 When we train it regularly, the network doesn’t learn to work with ternary quantized values. So the addition of this new quantizer into the layers just hurts the inner workings of the network. (<a href="#fn-3">Footnote 3</a>)</p>
 <h2 id="why-the-hell-does-this-work">Why the hell does this work?</h2>
 <p>I don’t know. But it does. People say it’s because neural networks are very redundant, and most of what matters in a weight matrix is which connections exist and their signs and scale.</p>
-<p>Research (<a href="#fr-1">further reading 1</a>) shows in ~3B sizes ternary transformers match the performance of regular transformers the same size. That’s crazy. It didn’t happen in my experiment because I’m broke and can’t train a 3B model.</p>
+<p>Research (<a href="#fr-1">further reading 1</a>) reports in ~3B sizes ternary transformers match the performance of regular transformers the same size. That’s crazy. It didn’t happen in my experiment because I’m broke and can’t train a 3B model.</p>
 <h2 id="further-reading">Further reading</h2>
 <ol>
 <li id="fr-1"><a href="https://arxiv.org/abs/2402.17764">Bitnet Paper link</a></li>
